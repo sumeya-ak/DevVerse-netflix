@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MovieFlix - Your Movie Destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <i class="fas fa-film"></i>
+                <h1>MovieFlix</h1>
+            </div>
+            <nav>
+                <ul class="horizontal-list">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#movies" class="nav-link">Movies</a></li>
+                    <li><a href="#about" class="nav-link">About Us</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#form" class="btn-login">Sign In</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>Welcome to MovieFlix</h1>
+                <p>Your one-stop destination for all things movies!</p>
+                  <div class="cta-buttons">
+                    <a href="#form" class="btn-primary">Join Now</a>
+                    <a href="#movies" class="btn-secondary">Browse Movies</a>
+                  </div>
+            </div>
+        </section>
+
+        <section id="movies">
+            <div class="section-header">
+                <h2>Featured Movies</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active">All</button>
+                    <button class="filter-btn">Action</button>
+                    <button class="filter-btn">Comedy</button>
+                    <button class="filter-btn">Drama</button>
+                </div>
+            </div>
+            <h2>Featured Movies</h2>
+            <div class="movie-grid">
+                <!-- Movie cards will be dynamically inserted here -->
+                <div class="movie-card">
+                    <img src="The-Lion-King-Artwork.jpg" alt="Movie Poster" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>The Lion King</h3>
+                        <div class="movie-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 9.5</span>
+                            <span class="year">2023</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="mr-peabody-and-sherman.avif" alt="Movie Poster" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Mr. peabody and Sherman</h3>
+                        <div class="movie-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 8.5</span>
+                            <span class="year">2019</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="OIP.jfif" alt="Movie Poster" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Ferdinad</h3>
+                        <div class="movie-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 8.5</span>
+                            <span class="year">2020</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="movie-card">
+                    <img src="Kung-Fu-Panda-poster.jpg" alt="Movie Poster" class="movie-poster">
+                    <div class="movie-info">
+                        <h3>Kung-Fu-Panda</h3>
+                        <div class="movie-meta">
+                            <span class="rating"><i class="fas fa-star"></i> 8.5</span>
+                            <span class="year">2023</span>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="form" class="form-section">
+            <div class="form-container">
+                <h2>Create Your Account</h2>
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="date">Birth Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                
+                <div class="form-group">
+                    <label>Sex:</label>
+                    <div class="radio-group">
+                        <label>
+                            <input type="radio" name="sex" value="male">
+                            <span>Male</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="sex" value="female">
+                            <span>Female</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                
+                <button type="submit">Register</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <h3>MovieFlix</h3>
+        <p>&copy; 2023 All rights reserved</p>
+        <div class="link-column">
+            <h4 id="footer-links">Connect</h4>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
