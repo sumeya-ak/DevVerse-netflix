@@ -1,9 +1,156 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body></body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Movie App</h1>
+        <nav>
+            <ul>
+                <li ><a href="#hero">Home</a></li>
+                <li><a href="#features">About</a></li>
+                <li><a href="#movies">Movies</a></li>
+                <li><a href="#">Deals</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero-section" id='hero' >
+        <div class="hero-text">
+            <h1>Experience Movies Like Never Before</h1>
+            <h5>Watch the latest blockbusters in premium quality</h5>
+            <button>Book Tickets Now</button>
+        </div>
+    </section>
+    <section class="movies-section" id="movies">
+        <h2>Now Showing</h2>
+        <div class="movies">
+            <div class="movie-card">
+                <img src="Assets/img-1.avif" alt="Cosmic Adventure">
+                <h3>Cosmic Adventure</h3>
+                <p>Action, Sci-Fi</p>
+                <button>Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="Assets/img-2.avif" alt="Mystery Island">
+                <h3>Mystery Island</h3>
+                <p>Adventure, Mystery</p>
+                <button>Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="Assets/img-3.avif" alt="Romance, Dram">
+                <h3>Love Story</h3>
+                <p>Romance, Drama</p>
+                <button>Book Now</button>
+            </div>
+            <div class="movie-card">
+                <img src="Assets/img-4.avif" alt="Horror, Thriller<">
+                <h3>Night Hunters</h3>
+                <p>Horror, Thriller</p>
+                <button>Book Now</button>
+            </div>
+        </div>
+    </section>
+    <section class="features-section" id="features">
+        <h2>Why Choose Us</h2>
+        <div class="features">
+            <div class="features-card">
+                <div class="feature-icon">🎬</div>
+                <h2>Premium Screens</h2>
+                <p>Experience movies in high-definition quality with immersive sound.</p>
+            </div>
+            <div class="features-card">
+                <div class="feature-icon">🍿</div>
+                <h2>Delicious Snacks</h2>
+                <p>Enjoy a variety of snacks and beverages while watching your favorite movie..</p>
+            </div>
+            <div class="features-card">
+                <div class="feature-icon">💺</div>
+                <h2>Comfortable Seating</h2>
+                <p>Relax in our plush, comfortable seats designed for maximum enjoyment.</p>
+            </div>
+        </div>
+    </section>
+    <section class="form-section">
+        <h1>Book your ticket</h1>
+        <form action="">
+            <div class="form-group">
+            <label for="">Select Movie:</label><br>
+                <select name="" id="" required>
+                    <option value="">--Select a Movie--</option>
+                    <option value="">Cosmic Adventure</option>
+                    <option value="">Mystery Island</option>
+                    <option value="">Love Story</option>
+                    <option value="">Night Hunter</option>
+            </select>   
+            <br>
+            </div>
+        <div class="form-group">
+            <label for="date"> Select Date:</label><br>
+                <input type="date" name="date" id="" required><br>
+               
+          </div>     
+          <div class="form-group">
+          <label for="">Select Time:</label><br>
+                <select name="" id="" required>
+                    <option value="">10:00 A.M</option>
+                    <option value=""> 7:00 A.M</option>
+                    <option value="">4:00 A.M</option>
+                    <option value="">10:00 P.M</option>
+            </select> 
+         </div>
+         <div class="form-group">
+            <label for="date"> Number of Tickets</label><br>
+            <input type="number" name="" id=""> <br>
+        </div>
+        
+        <div class="form-group">
+            <label for="date"> Name</label><br>
+            <input type="text" name="" id="" required><br>
+         </div>   
+         
+         <div class="form-group">
+            <label for="date">Email Address</label><br>
+            <input type="email" name="" id="" required><br>
+        </div>
+        
+        <div class="form-group">
+            <button type="submit"> Book Now</button>
+        </div>
+        </form>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>MovieFlix</h3>
+                <p>Your ultimate destination for the best movie experience.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li ><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Movies</a></li>
+                    <li><a href="#">Deals</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@movieflix.com</p>
+                <p>Phone: (123) 456-7890</p>
+                <p>Address: 123 Cinema Street, Movie City</p>
+
+            </div>
+            
+        </div>
+        <div class="footer-bottom">
+                <p>© 2025 MovieFlix. All rights reserved.</p>
+            </div>
+    </footer>
+</body>
 </html>
